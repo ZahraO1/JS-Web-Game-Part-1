@@ -29,18 +29,27 @@ newImage('assets/pillar.png',350,100)
 newImage('assets/crate.png',150,200)
 newImage('assets/well.png',500,425)
 
-let sword = newImage('assets/sword.png',500,405)
-sword.addEventListener('click',function(){
+/* let sword = newImage('assets/sword.png',500,405)
+sword.addEventListener('dblclick',function(){
     sword.remove();
 })
 
 let shield = newImage('assets/shield.png',165,185)
 let staff = newImage('assets/staff.png',600,100)
 
-shield.addEventListener('click',function(){
+shield.addEventListener('dblclick',function(){
     shield.remove();
 })
 
-staff.addEventListener('click',function(){
+staff.addEventListener('dblclick',function(){
     staff.remove();
-})
+}) */
+function newItem(inFunction){
+    let element = inFunction;
+    element.addEventListener('dblclick',function(){
+        element.remove();
+    })
+}
+newItem(newImage('assets/sword.png',500,405))
+newItem(newImage('assets/shield.png',165,185))
+newItem(newImage('assets/staff.png',600,100))
