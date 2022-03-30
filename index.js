@@ -33,3 +33,6 @@ let sword = newImage('assets/sword.png',500,405)
 sword.addEventListener('click',function(){
     sword.remove();
 })
+
+let shield = newImage('assets/shield.png',165,185)
+let staff = newImage('assets/staff.png',600,100)
