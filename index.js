@@ -36,3 +36,11 @@ sword.addEventListener('click',function(){
 
 let shield = newImage('assets/shield.png',165,185)
 let staff = newImage('assets/staff.png',600,100)
+
+shield.addEventListener('click',function(){
+    shield.remove();
+})
+
+staff.addEventListener('click',function(){
+    staff.remove();
+})
