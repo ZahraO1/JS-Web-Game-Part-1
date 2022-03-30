@@ -5,6 +5,7 @@ function newImage(src,x,y){
     element.style.left = x +'px';
     element.style.bottom = y + 'px';
     document.body.append(element)
+    return element;
 }
 
 //let greenCharacter = document.createElement('img')
@@ -27,3 +28,8 @@ newImage('assets/tree.png',200,300)
 newImage('assets/pillar.png',350,100)
 newImage('assets/crate.png',150,200)
 newImage('assets/well.png',500,425)
+
+let sword = newImage('assets/sword.png',500,405)
+sword.addEventListener('click',function(){
+    sword.remove();
+})
